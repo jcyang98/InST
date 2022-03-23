@@ -1,0 +1,179 @@
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="./resources/style.css" media="screen"/>
+
+<html lang="en">
+<head>
+  	<title>Industrial Style Transfer with Large-scale Geometric Warping and Content Preservation</title>
+      <!-- Facebook automatically scrapes this. Go to https://developers.facebook.com/tools/debug/
+          if you update and want to force Facebook to re-scrape. -->
+  	<meta property="og:image" content="Path to my teaser.jpg"/>
+  	<meta property="og:title" content="Creative and Descriptive Paper Title." />
+  	<meta property="og:description" content="Paper description." />
+    <!-- Twitter automatically scrapes this. Go to https://cards-dev.twitter.com/validator?
+        if you update and want to force Twitter to re-scrape. -->
+    <meta property="twitter:card"          content="summary" />
+    <meta property="twitter:title"         content="Creative and Descriptive Paper Title." />
+    <meta property="twitter:description"   content="Paper description." />
+    <meta property="twitter:image"         content="Path to my teaser.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Add your Google Analytics tag here -->
+    <script async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-97476543-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-97476543-1');
+    </script>
+
+</head>
+
+<body>
+<div class="container">
+    <div class="title">
+        Industrial Style Transfer with Large-scale Geometric Warping and Content Preservation
+    </div>
+
+    <div class="venue">
+        In CVPR 2022
+    </div>
+
+    <br><br>
+
+    <div class="author">
+        <a href="https://en.wikipedia.org/wiki/James_J._Gibson">Jinchao Yang</a><sup>1*</sup>
+    </div>
+    <div class="author">
+        <a href="https://en.wikipedia.org/wiki/James_J._Gibson">Fei Guo</a><sup>1*</sup>
+    </div>
+    <div class="author">
+        <a href="https://en.wikipedia.org/wiki/James_J._Gibson">Shuo Chen</a><sup>2</sup>
+    </div>
+    <div class="author">
+        <a href="https://en.wikipedia.org/wiki/James_J._Gibson">Jun Li</a><sup>1†</sup>
+    </div>
+    <div class="author">    
+        <a href="https://en.wikipedia.org/wiki/James_J._Gibson">Jian Yang</a><sup>1</sup>
+    </div>
+
+    <br><br>
+
+    <div class="affiliation"><sup>1&nbsp;</sup>PCA Lab, Nanjing University of Science and Technology</div>
+    <div class="affiliation"><sup>2&nbsp;</sup>RIKEN</div>
+
+    <br><br>
+
+    <p style="width: 80%; font-size:14px"> * Contributes equally, † Corresponding author&project lead</p>
+
+    <div class="links"><a href="">[Paper]</a></div>
+    <div class="links"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">[Video]</a></div>
+    <div class="links"><a href="https://github.com/JinChao-Yang/InST">[Code]</a></div>
+
+    <br><br>
+
+    <img style="width: 80%;" src="./resources/teaser.jpg" alt="Teaser figure."/>
+    <br>
+    <p style="width: 80%;">
+        We propose an Industrial Style Transfer method for visual product design. Our method creates new product appearances 
+        (e.g., logos and Day&Night bottles) by transferring both the shape of one product (target) and art style reference to another (source)..
+    </p>
+
+    <br><br>
+    <hr>
+
+    <h1>Abstract</h1>
+    <p style="width: 80%;">
+        We propose a novel style transfer method to quickly create a new visual product with a nice appearance for 
+        industrial designers’ reference. Given a source product, a target product, and an art style image, our method 
+        produces a neural warping field that warps the source shape to imitate the geometric style of the target and a 
+        neural texture transformation network that transfers the artistic style to the warped source product. Our model, 
+        Industrial Style Transfer (InST), consists of large-scale geometric warping (LGW) and interest-consistency texture 
+        transfer (ICTT). LGW aims to explore an unsupervised transformation between the shape masks of the source and target 
+        products for fitting large-scale shape warping. Furthermore, we introduce a mask smoothness regularization term to 
+        prevent the abrupt changes of the details of the source product. ICTT introduces an interest regularization term to 
+        maintain important contents of the warped product when it is stylized by using the art style image. Extensive experimental 
+        results demonstrate that InST achieves state-of-the-art performance on multiple visual product design tasks, 
+        e.g., companies' snail logos, classical bottles, flying cars, and porcelain fashions. To the best of our knowledge, 
+        we are the first to extend the neural style transfer method to create industrial product appearances. Code is available 
+        at <a href="https://github.com/JinChao-Yang/InST">https://github.com/JinChao-Yang/InST</a>
+    </p>
+
+    <br><br>
+    <hr>
+
+    <h1>Video</h1>
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameBorder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+    </div>
+
+    <br><br>
+    <hr>
+
+    <!-- <h1>Method Overview</h1>
+    <img style="width: 80%;" src="./resources/method.jpg"
+         alt="Method overview figure"/>
+    <br>
+    <a class="links" href="https://github.com/elliottwu/webpage-template">[Code]</a>
+
+    <br><br>
+    <hr> -->
+
+    <h1>Results</h1>
+    <h3 style="text-align: center;">Visual product design results using the geometric style transfer methods</h3>
+    <img style="width: 80%;" src="./resources/results/warp.jpg"
+         alt="warp.jpg"/>
+    <h3 style="text-align: center;">Content preservation results using the texture style transfer methods</h3>
+    <img style="width: 80%;" src="./resources/results/texture.jpg"
+         alt="texture.jpg"/>
+    <h3 style="text-align: center;">Visual logo design results</h3>
+    <img style="width: 80%;" src="./resources/results/warp_texture.jpg"
+         alt="warp_texture.jpg"/>
+    <h3 style="text-align: center;">Visual product design results</h3>
+    <img style="width: 80%;" src="./resources/results/warp_texture2.jpg"
+         alt="warp_texture2.jpg"/>
+
+    <br><br>
+    <hr>
+
+    <h1>Paper</h1>
+    <div class="paper-thumbnail">
+        <a href="https://arxiv.org">
+            <img class="layered-paper-big" width="100%" src="./resources/paper.jpg" alt="Paper thumbnail"/>
+        </a>
+    </div>
+    <div class="paper-info">
+        <h3>Industrial Style Transfer with Large-scale Geometric Warping and Content Preservation</h3>
+        <p>Jinchao Yang, Fei Guo, Shuo Chen, Jun L, and Jian Yang</p>
+        <p>In CVPR, 2022</p>
+        <pre><code>@InProceedings{jcyang2022InST,
+    title = {Industrial Style Transfer with Large-scale Geometric Warping and Content Preservation},
+    author = {Jinchao Yang and Fei Guo and Shuo Chen and Jun L and Jian Yang},
+    booktitle = {CVPR},
+    year = {2022},
+}</code></pre>
+    </div>
+
+    <br><br>
+    <hr>
+
+    <h1>Acknowledgements</h1>
+    <p style="width: 80%;">
+        The <a href="https://github.com/elliottwu/webpage-template">webpage template</a> was adapted 
+        from <a href="https://github.com/richzhang/webpage-template">Richard Zhang's</a> and 
+        <a href="https://github.com/jasonyzhang/webpage-template">Jason Zhang's</a> templates.
+    </p>
+
+    <br><br>
+</div>
+
+</body>
+
+</html>
