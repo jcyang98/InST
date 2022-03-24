@@ -123,15 +123,28 @@
     <hr> -->
 
     <h1>Method Overview</h1>
-    <h3 style="text-align: center;">The pipeline of our InST</h3>
+    <!-- <h3 style="text-align: center;">The pipeline of our InST</h3> -->
     <img style="width: 50%;" src="./resources/methods/architecture.jpg"
          alt="architecture"/>
-    <h3 style="text-align: center;">Large-scale geometric warping module</h3>
+    <p style="width: 80%; font-size:14px; text-align: center;"> The pipeline of our industrial style transfer. 
+        Our method creates a new product <em>N</em> by warping source <em>S</em> to target <em>T</em>, and generates a final product 
+        appearance <em>O</em> by transferring the artistic style of reference image <em>A</em> to the new product <em>N</em>.</p>
+    <br>
+
+    <!-- <h3 style="text-align: center;">Large-scale geometric warping module</h3> -->
     <img style="width: 80%;" src="./resources/methods/deform_module.jpg"
          alt="deform_module"/>
-    <h3 style="text-align: center;">Interest-consistency texture transfer module </h3>
+    <p style="width: 80%; font-size:14px; text-align: center;"> Our proposed large-scale geometric warping module including a mask 
+        RAFT network and an unsupervised warping loss.</p>
+    <br>
+    
+
+    <!-- <h3 style="text-align: center;">Interest-consistency texture transfer module </h3> -->
     <img style="width: 50%;" src="./resources/methods/texture_module.jpg"
          alt="texture_module"/>
+    <br>
+    <p style="width: 80%; font-size:14px; text-align: center;"> Interest-consistency texture transfer. It consists of a NST method for 
+        artistic style transformation and a SuperPoint network for content preservation by interest point constraints.</p>
 
     <br><br>
     <hr>
